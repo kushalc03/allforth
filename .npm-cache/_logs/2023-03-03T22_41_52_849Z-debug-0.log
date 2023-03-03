@@ -1,0 +1,42 @@
+0 verbose cli /opt/homebrew/Cellar/node/19.7.0/bin/node /opt/homebrew/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@9.5.0
+2 info using node@v19.7.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc Completed in 5ms
+6 timing config:load:builtin Completed in 5ms
+7 timing config:load:cli Completed in 0ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/Users/kushalchattopadhyay/Downloads/Allforth/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/kushalchattopadhyay/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/Users/kushalchattopadhyay/.npm-global/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 9ms
+17 timing npm:load:configload Completed in 9ms
+18 timing npm:load:mkdirpcache Completed in 0ms
+19 timing npm:load:mkdirplogs Completed in 0ms
+20 verbose title npm exec react-native run-ios
+21 verbose argv "exec" "--" "react-native" "run-ios"
+22 timing npm:load:setTitle Completed in 2ms
+23 timing config:load:flatten Completed in 1ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:/Users/kushalchattopadhyay/Downloads/Allforth/.npm-cache/_logs/2023-03-03T22_41_52_849Z-
+26 verbose logfile /Users/kushalchattopadhyay/Downloads/Allforth/.npm-cache/_logs/2023-03-03T22_41_52_849Z-debug-0.log
+27 timing npm:load:logFile Completed in 3ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 15ms
+31 silly logfile done cleaning log files
+32 http fetch GET 200 https://registry.npmjs.org/npm 240ms (cache miss)
+33 timing command:exec Completed in 175936ms
+34 notice
+34 notice New [33mminor[39m version of npm available! [31m9.5.0[39m -> [32m9.6.0[39m
+34 notice Changelog: [36mhttps://github.com/npm/cli/releases/tag/v9.6.0[39m
+34 notice Run [32mnpm install -g npm@9.6.0[39m to update!
+34 notice
+35 verbose exit 0
+36 timing npm Completed in 175978ms
+37 info ok
