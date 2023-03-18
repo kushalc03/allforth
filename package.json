@@ -10,9 +10,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "mongodb-realm-cli": "^2.6.2",
     "react": "18.2.0",
     "react-native": "0.71.3",
-    "react-native-maps": "1.4.0"
+    "react-native-maps": "^1.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
