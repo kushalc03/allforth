@@ -1,98 +1,86 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
-import React from 'react';
-import type {PropsWithChildren} from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
   StyleSheet,
-  Text,
-  useColorScheme,
   View,
+  Dimensions,
+  PermissionsAndroid,
+  Alert,
+  Platform,
 } from 'react-native';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+import MapView from 'react-native-maps';
+import Geolocation from '@react-native-community/geolocation';
+import {Marker} from 'react-native-maps';
+import React, {useState, useEffect} from 'react';
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const [location, setLocation] = useState<any>(null);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
+  const requestLocationPermission = async () => {
+    try {
+      if (Platform.OS === 'android') {
+        const granted = await PermissionsAndroid.request(
+          PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+          {
+            title: 'Location Permission',
+            message:
+              'This app needs to access your location in order to show your current position on the map.',
+            buttonNeutral: 'Ask Me Later',
+            buttonNegative: 'Cancel',
+            buttonPositive: 'OK',
+          },
+        );
+        if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+          Geolocation.getCurrentPosition(
+            position => {
+              setLocation(position.coords);
+            },
+            error => Alert.alert(error.message),
+            {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
+          );
+        } else {
+          Alert.alert('Location permission denied.');
+        }
+      } else {
+        Geolocation.getCurrentPosition(
+          position => {
+            setLocation(position.coords);
+          },
+          error => Alert.alert(error.message),
+          {enableHighAccuracy: true, timeout: 20000, maximumAge: 1000},
+        );
+      }
+    } catch (err) {
+      console.warn(err);
+    }
   };
 
+  useEffect(() => {
+    requestLocationPermission();
+  }, []);
+
+  // temporary example marker
+  // will move this into a separate file to make collection of markers by category
+  const bostonRegion = {
+    latitude: 42.3601,
+    longitude: -71.0589,
+    latitudeDelta: 0.01,
+    longitudeDelta: 0.01,
+  };
+
+  // default initial region is Harvard Square
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
+    <View style={styles.map}>
+      <Marker coordinate={bostonRegion} />
+      <MapView
+        style={styles.map}
+        initialRegion={{
+          latitude: location?.latitude || 42.37357,
+          longitude: location?.longitude || -71.118966,
+          latitudeDelta: 0.01,
+          longitudeDelta: 0.01,
+        }}
       />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    </View>
   );
 }
 
@@ -112,6 +100,10 @@ const styles = StyleSheet.create({
   },
   highlight: {
     fontWeight: '700',
+  },
+  map: {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
   },
 });
 
