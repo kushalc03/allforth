@@ -61,8 +61,8 @@ function App(): JSX.Element {
   // temporary example marker
   // will move this into a separate file to make collection of markers by category
   const bostonRegion = {
-    latitude: 42.3601,
-    longitude: -71.0589,
+    latitude: 42.37357,
+    longitude: -71.118966,
     latitudeDelta: 0.01,
     longitudeDelta: 0.01,
   };
@@ -70,7 +70,6 @@ function App(): JSX.Element {
   // default initial region is Harvard Square
   return (
     <View style={styles.map}>
-      <Marker coordinate={bostonRegion} />
       <MapView
         style={styles.map}
         initialRegion={{
@@ -79,6 +78,16 @@ function App(): JSX.Element {
           latitudeDelta: 0.01,
           longitudeDelta: 0.01,
         }}
+      />
+      <Marker
+        coordinate={{
+          latitude: location?.latitude || bostonRegion.latitude,
+          longitude: location?.longitude || bostonRegion.longitude,
+        }}
+        title="Boston"
+        description="This is the city of Boston"
+        pinColor="red"
+        // image={require('./custom-marker.png')}
       />
     </View>
   );
