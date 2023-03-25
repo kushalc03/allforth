@@ -12,7 +12,7 @@ import Geolocation from '@react-native-community/geolocation';
 import {Marker} from 'react-native-maps';
 import React, {useState, useEffect} from 'react';
 
-function App(): JSX.Element {
+function App(this: any): JSX.Element {
   const [location, setLocation] = useState<any>(null);
 
   const requestLocationPermission = async () => {
@@ -61,10 +61,10 @@ function App(): JSX.Element {
   // temporary example marker
   // will move this into a separate file to make collection of markers by category
   const bostonRegion = {
-    latitude: 42.37357,
-    longitude: -71.118966,
-    latitudeDelta: 0.01,
-    longitudeDelta: 0.01,
+    latitude: 42.3601,
+    longitude: -71.0589,
+    latitudeDelta: 0.1,
+    longitudeDelta: 0.1,
   };
 
   // default initial region is Harvard Square
@@ -72,23 +72,10 @@ function App(): JSX.Element {
     <View style={styles.map}>
       <MapView
         style={styles.map}
-        initialRegion={{
-          latitude: location?.latitude || 42.37357,
-          longitude: location?.longitude || -71.118966,
-          latitudeDelta: 0.01,
-          longitudeDelta: 0.01,
-        }}
-      />
-      <Marker
-        coordinate={{
-          latitude: location?.latitude || bostonRegion.latitude,
-          longitude: location?.longitude || bostonRegion.longitude,
-        }}
-        title="Boston"
-        description="This is the city of Boston"
-        pinColor="red"
-        // image={require('./custom-marker.png')}
-      />
+        initialRegion={bostonRegion}
+        showsUserLocation={true}>
+        <Marker coordinate={bostonRegion} />
+      </MapView>
     </View>
   );
 }
