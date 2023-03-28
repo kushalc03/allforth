@@ -1,20 +1,47 @@
-import {
-  StyleSheet,
-  View,
-  Dimensions,
-  PermissionsAndroid,
-  Alert,
-  Platform,
-} from 'react-native';
+import {View, PermissionsAndroid, Alert, Platform} from 'react-native';
 
-import MapView from 'react-native-maps';
+import * as Realm from "realm-web";
+import styles from './styles/style';
 import Geolocation from '@react-native-community/geolocation';
-import {Marker} from 'react-native-maps';
 import React, {useState, useEffect} from 'react';
+import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink} from '@apollo/client';
+import BostonMap from './src/bostonmap';
 
 function App(this: any): JSX.Element {
-  const [location, setLocation] = useState<any>(null);
+  const [, setLocation] = useState<any>(null);
 
+  // Initialize Apollo Client
+// Connect to your MongoDB Realm app
+  const app = new Realm.App('allforth-cbfrg');
+  // Gets a valid Realm user access token to authenticate requests
+  async function getValidAccessToken() {
+    // Guarantee that there's a logged in user with a valid access token
+    if (!app.currentUser) {
+      // If no user is logged in, log in an anonymous user. The logged in user will have a valid
+      // access token.
+      await app.logIn(Realm.Credentials.anonymous());
+    } else {
+      // An already logged in user's access token might be stale. Tokens must be refreshed after 
+      // 30 minutes. To guarantee that the token is valid, we refresh the user's access token.
+      await app.currentUser.refreshAccessToken();
+    }
+
+  const client = new ApolloClient({
+    link: new HttpLink({
+      uri: `https://realm.mongodb.com/api/client/v2.0/app/${allforth-cbfrg}/graphql`,
+      // We define a custom fetch handler for the Apollo client that lets us authenticate GraphQL requests.
+      // The function intercepts every Apollo HTTP request and adds an Authorization header with a valid
+      // access token before sending the request.
+      fetch: async (uri, options) => {
+        const accessToken = await getValidAccessToken();
+        options.headers.Authorization = `Bearer ${accessToken}`;
+        return fetch(uri, options);
+      },
+    }),
+    cache: new InMemoryCache(),
+  });
+
+  // Location Permission
   const requestLocationPermission = async () => {
     try {
       if (Platform.OS === 'android') {
@@ -58,49 +85,13 @@ function App(this: any): JSX.Element {
     requestLocationPermission();
   }, []);
 
-  // temporary example marker
-  // will move this into a separate file to make collection of markers by category
-  const bostonRegion = {
-    latitude: 42.3601,
-    longitude: -71.0589,
-    latitudeDelta: 0.1,
-    longitudeDelta: 0.1,
-  };
-
-  // default initial region is Harvard Square
   return (
-    <View style={styles.map}>
-      <MapView
-        style={styles.map}
-        initialRegion={bostonRegion}
-        showsUserLocation={true}>
-        <Marker coordinate={bostonRegion} />
-      </MapView>
-    </View>
+    <ApolloProvider client={client}>
+      <View style={styles.map}>
+        <BostonMap />
+      </View>
+    </ApolloProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  map: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
-  },
-});
 
 export default App;
