@@ -1,0 +1,147 @@
+{
+  "Sheet1": [
+    {
+      "Name": "Cambridge Warming Center",
+      "Address": "Basement of the Cambridge Senior Center (Access is solely through the rear parking lot on Green Street), 806 Massachusetts Ave, Cambridge, MA 02139",
+      "Brief Description": "Drop-in center on a first come first serve basis until capacity is reached. Provide beverages and a hot meal, access to bathrooms and shower, and the ability to rest on a yoga mat on the floor. Guests may talk with expert staff to get a referral to physical and mental health care, addiction treatment services and housing services. When the Center closes in the morning, all guests are offered a ride to a local daytime shelter.",
+      "Phone Number": "['(857) 292-1870']",
+      "Website": "਴tps://www.cambridgema.gov/Services/winterwarmingcenter",
+      "Hours": "2022-2023 season, which runs December 1, 2022 through April 30, 2023, the Warming Center will be available from 7:00 p.m. to 7:00 a.m. seven days a week",
+      "Qualifications": "18+, ID not required, damp shelter",
+      "Latitude": "42.36662405",
+      "Longitude": "-71.10636611"
+    },
+    {
+      "Name": "Harvard Square Homeless Shelter",
+      "Address": "66 Winthrop St, Cambridge, MA",
+      "Brief Description": "Student-run overnight shelter that provides 24 homeless individuals at a time with a safe, clean, and caring place to stay during the winter months. In addition to temporary shelter, HSHS also provides counseling resources and a transitional program for guests who are employed and committed to saving money towards securing housing.",
+      "Phone Number": "['(617) 547-2841']",
+      "Website": "਴tps://www.harvardsquare.com/venue/harvard-square-homeless-shelter/",
+      "Hours": "Overnight Shelter. Open from November 15th until April 15th; 7:30-8am lottery for 14-day beds; 9-9:30pm for single night beds, 11pm last call lottery for single night beds.\u0000",
+      "Qualifications": "18+, criminal record allowed, no substances allowed - dry shelter, has accessability",
+      "Latitude": "42.3717627",
+      "Longitude": "-71.12012862"
+    },
+    {
+      "Name": "Pine Street Inn Shelters - Men's Inn",
+      "Address": "444 Harrison Ave, Boston, MA 02118",
+      "Brief Description": "Өelter is open 24/7/365 days a year and provides emergency shelter services to 206 guests each night. Guest Services Specialists create a welcoming atmosphere of respect while providing connections to critical services that help reduce lengths of homelessness and support each individual pathway to permanent housing.",
+      "Phone Number": "['(617) 892-9100', '(617) 892-9228']",
+      "Website": "https://www.pinestreetinn.org/programs/emergency-services/emergency-shelter",
+      "Hours": "open 24/7/365 days a year",
+      "Qualifications": "Must identify/present as male, 18+, No ID required, criminal record allowed, substances allowed",
+      "Latitude": "42.3432437",
+      "Longitude": "-71.0644988"
+    },
+    {
+      "Name": "Pine Street Inn Shelters - Women's Inn",
+      "Address": "363 Albany St, Boston, MA 02118",
+      "Brief Description": "Women񳠉nn is open 24/7/365 and provides a safe, supportive, and welcoming environment for 81 guests each night. Staff members work with guests to create a pathway to permanent supportive housing, providing connections to critical services that help reduce the lengths of homelessness and support each individual in their housing goal.",
+      "Phone Number": "['(617) 892-9100', '(617) 892-9228']",
+      "Website": "https://www.pinestreetinn.org/programs/emergency-services/emergency-shelter",
+      "Hours": "open 24/7/365 days a year",
+      "Qualifications": "Must identify/present as female, 18+, No ID required, criminal record allowed, substances allowed",
+      "Latitude": "42.342456",
+      "Longitude": "-71.062887"
+    },
+    {
+      "Name": "Pine Street Inn Shelters - Shattuck Shelter",
+      "Address": "170 Morton Street, Jamaica Plain, MA 02130",
+      "Brief Description": "Open 24/7/365 and offers emergency shelter for 30 guests in support of theࠃity of Boston񳠥fforts to provide shelter, recovery services and a housing pathway for individuals who had been unsheltered in the Mass and Cass area. Also provides assistance for guests who are struggling with addiction, legal, financial, mental health and physical issues.",
+      "Phone Number": "['(617) 892-9100', '(617) 892-9228']",
+      "Website": "https://www.pinestreetinn.org/programs/emergency-services/emergency-shelter",
+      "Hours": "open 24/7/365 days a year",
+      "Qualifications": "18+, criminal record allowed",
+      "Latitude": "42.2991367",
+      "Longitude": "-71.1015014"
+    },
+    {
+      "Name": "Pine Street Inn Shelters - Holy Family Shelter",
+      "Address": "24 Hartford St, Dorchester, MA 02125",
+      "Brief Description": "Holy Family Inn provides a sober shelter environment for 47 guests each night. Guests are referred from other Pine Street Inn emergency shelters and programs and must be actively engaged in seeking housing.",
+      "Phone Number": "['(617) 892-9100', '(617) 892-9228']",
+      "Website": "https://www.pinestreetinn.org/programs/emergency-services/emergency-shelter",
+      "Hours": "open 24/7/365 days a year",
+      "Qualifications": "This is a referral-only sober living shelter. Guests are referred from Pine Street񳠍en񳠉nn and Shattuck Shelter. All guests must be actively seeking housing.",
+      "Latitude": "42.316990",
+      "Longitude": "-71.072578"
+    },
+    {
+      "Name": "Southhampton St. Men's Shelter",
+      "Address": "112 Southampton St, Boston, MA 02118 ",
+      "Brief Description": "Beds are first come first serve. Offer breakfast (5:30am-6am), lunch (11pm), and dinner (4:30pm). ",
+      "Phone Number": "['(617) 534-6100']",
+      "Website": "https://www.bhchp.org/locations/southampton-street-shelter/",
+      "Hours": "7 days a week and 24/7",
+      "Qualifications": "18+ - mens shelter",
+      "Latitude": "42.33240995",
+      "Longitude": "-71.06915011"
+    },
+    {
+      "Name": "Y2Y Harvard Square Youth Shelter",
+      "Address": "1 Church St, Cambridge, MA 02138",
+      "Brief Description": "Student-run overnight shelter that employs a youth-to-youth model to provide a safe and affirming environment for young adults 18-24 experiencing homelessness. Dinner and breakfast is provided to guests that have a bed at Y2Y. Case management services are also provided every night at Y2Y.",
+      "Phone Number": "['(617) 864-0795']",
+      "Website": "https://www.harvardsquare.com/venue/y2y-harvard-square/",
+      "Hours": "Overnight Shelter. Open from mid-June to mid-August and mid-October to mid-April. Lottery runs at 8:45AM each day.",
+      "Qualifications": "18-24, damp shelter - can be under the influence but no substances within the space, accessable",
+      "Latitude": "42.374465",
+      "Longitude": "-71.118956"
+    },
+    {
+      "Name": "MetroHousing Boston",
+      "Address": "1411 Tremont St, Boston, MA 02120",
+      "Brief Description": "Helps unhoused people in the Boston area find permament housing.",
+      "Phone Number": "['(627) 859-0400']",
+      "Website": "https://www.metrohousingboston.org/",
+      "Hours": "9AM-3PM M-F",
+      "Qualifications": "",
+      "Latitude": "42.3315121",
+      "Longitude": "-71.09576375"
+    },
+    {
+      "Name": "Somerville Housing Coalition",
+      "Address": "1 Davis Square, Somerville, MA 02144",
+      "Brief Description": "Helps unhoused people in the Somerville Area find permanent housing",
+      "Phone Number": "['(617) 623-6111']",
+      "Website": "https://somervillehomelesscoalition.org/",
+      "Hours": "open every day",
+      "Qualifications": "leave your name and number when you call",
+      "Latitude": "42.3962563",
+      "Longitude": "-71.1227156"
+    },
+    {
+      "Name": "Cambridge Multi-Service Center",
+      "Address": "362 Green St, Cambridge, MA 02139",
+      "Brief Description": "Offers case management for referral to shelters and other services; also offers a transitional living program for men. For access to case management, walk-in hours are Monday: 9AM-7:30PM; Tuesday: 9AM-430PM; Friday: 9AM-1130AM.",
+      "Phone Number": "['(617) 349-6340']",
+      "Website": "https://www.cambridgema.gov/Services/HomelessandEvictionPreventionServices",
+      "Hours": "Walk in hours: Monday 9AM-730PM; Tuesday-Thursday 9AM-430PM; Friday 9AM-1130AM",
+      "Qualifications": "",
+      "Latitude": "42.36556444",
+      "Longitude": "-71.10567968"
+    },
+    {
+      "Name": "Bridge Over Troubled Waters",
+      "Address": "47 West St, Boston, MA 02111",
+      "Brief Description": "For youth who need help, Bridge can provide more than just shelter and a warm meal. Bridge helps youths find pathways to education, mental health counseling, career development, transitional living solutions, community support, and more. ",
+      "Phone Number": "['(617) 423-9575']",
+      "Website": "https://bridgeotw.org/",
+      "Hours": "M-F 9AM-5PM",
+      "Qualifications": "ages 14-24",
+      "Latitude": "42.3551055",
+      "Longitude": "-71.06300696"
+    },
+    {
+      "Name": "Rosie's Place",
+      "Address": "889 Harrison Ave, Boston, MA 02118",
+      "Brief Description": "үsie's Place is a multi-service community center that offers women emergency shelter and meals, and so much more: a food pantry, ESOL classes, legal assistance, wellness care, one-on-one support, housing and job search services, and community outreach. Here women will find support, opportunity and the tools they need to make a new start.",
+      "Phone Number": "['(617) 442-9322']",
+      "Website": "https://www.rosiesplace.org/",
+      "Hours": "M-F 730AM-7PM; S/Su 9AM-5PM",
+      "Qualifications": "womens shelter",
+      "Latitude": "42.33398053",
+      "Longitude": "-71.07668629"
+    }
+  ]
+}

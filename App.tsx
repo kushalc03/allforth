@@ -1,19 +1,14 @@
-import {
-  StyleSheet,
-  View,
-  Dimensions,
-  PermissionsAndroid,
-  Alert,
-  Platform,
-} from 'react-native';
+import {PermissionsAndroid, Alert, Platform} from 'react-native';
 
-import MapView from 'react-native-maps';
 import Geolocation from '@react-native-community/geolocation';
-import {Marker} from 'react-native-maps';
 import React, {useState, useEffect} from 'react';
+
+import AllforthMap from './components/AllforthMap';
 
 function App(this: any): JSX.Element {
   const [location, setLocation] = useState<any>(null);
+
+  // const app = new Realm.App('allforth-cbfrg');
 
   const requestLocationPermission = async () => {
     try {
@@ -58,49 +53,27 @@ function App(this: any): JSX.Element {
     requestLocationPermission();
   }, []);
 
-  // temporary example marker
-  // will move this into a separate file to make collection of markers by category
-  const bostonRegion = {
-    latitude: 42.3601,
-    longitude: -71.0589,
-    latitudeDelta: 0.1,
-    longitudeDelta: 0.1,
-  };
-
+  // const initialRegion = {
+  //   latitude: 42.3601,
+  //   longitude: -71.0589,
+  //   latitudeDelta: 0.1,
+  //   longitudeDelta: 0.1,
+  // };
   // default initial region is Harvard Square
   return (
-    <View style={styles.map}>
-      <MapView
-        style={styles.map}
-        initialRegion={bostonRegion}
-        showsUserLocation={true}>
-        <Marker coordinate={bostonRegion} />
-      </MapView>
-    </View>
+    <AllforthMap />
+    // <View style={styles.map}>
+    //   <MapView
+    //     style={styles.map}
+    //     initialRegion={initialRegion}
+    //     showsUserLocation={true}>
+    //     {mapMedicalMarkers()}
+    //     {mapFoodMarkers()}
+    //     {mapAddictionRecoveryMarkers()}
+    //     {mapHousingMarkers()}
+    //   </MapView>
+    // </View>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  map: {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
-  },
-});
 
 export default App;
