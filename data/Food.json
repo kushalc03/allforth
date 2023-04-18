@@ -46,7 +46,8 @@
     },
     {
       "Name": "Coast Community Fridge",
-      "Brief Description": "Located at the Cambridge Community Center in Cambridge񳠒iverside neighborhood just outside of Central Square.",
+      "Brief Description": "Located at the Cambridge Community Center in Cambridge Riverside neighborhood just outside of Central Square.",
+
       "Address": "5 Callender St, Cambridge, MA 02139",
       "Phone Number": "[]",
       "Website": "https://www.instagram.com/cambridgecitygrowers/",
@@ -89,8 +90,8 @@
       "Longitude": "-71.10165179"
     },
     {
-      "Name": "First Church Friday Caf退",
-      "Brief Description": "The Friday Caf鬠a weekly daytime drop-in program, offers a welcoming space where homeless and housed adults can gather and get to know each other. At the Friday Caf鬠people experiencing a wide variety of life circumstances can relax, share a meal, and talk together as friends.",
+      "Name": "First Church Friday Caf\u00E9",
+      "Brief Description": "The Friday Caf\u00E9 weekly daytime drop-in program, offers a welcoming space where homeless and housed adults can gather and get to know each other. At the Friday Caf\u00E9people experiencing a wide variety of life circumstances can relax, share a meal, and talk together as friends.",
       "Address": "11 Garden Street, Cambridge, MA 02138",
       "Phone Number": "['(617) 547-2724']",
       "Website": "https://www.firstchurchcambridge.org/friday-cafe/",
@@ -177,7 +178,7 @@
       "Longitude": "-70.95149219"
     },
     {
-      "Name": "Malden Community Fridge",
+      "Name": "Malden Community Fridge (Beach St)",
       "Brief Description": "One of three Malden Community Fridges, located at Linden Square Municipal Lot. There is also a micro-pantry adjacent.",
       "Address": "155 Beach St, Malden, MA 02148",
       "Phone Number": "[]",
@@ -188,7 +189,7 @@
       "Longitude": "-71.02635529"
     },
     {
-      "Name": "Malden Community Fridge",
+      "Name": "Malden Community Fridge (Faulkner St)",
       "Brief Description": "One of three Malden Community Fridges, located across from the community garden, behind the U-Haul.",
       "Address": "Faulkner St, Malden, MA 02148",
       "Phone Number": "[]",
@@ -298,7 +299,7 @@
       "Longitude": "-71.1039682"
     },
     {
-      "Name": "Sommerville Community Fridge",
+      "Name": "Somerville Community Fridge (Prospect St)",
       "Brief Description": "One of three Somerville Community Fridges, located at 35 Prospect Street.",
       "Address": "35 Prospect St, Somerville, MA 02143",
       "Phone Number": "[]",
@@ -309,7 +310,7 @@
       "Longitude": "-71.0948863"
     },
     {
-      "Name": "Sommerville Community Fridge",
+      "Name": "Somerville Community Fridge (Sewall St)",
       "Brief Description": "One of three Somerville Community Fridges, located near the Temple Street Walgreens on 36 Sewall Street.",
       "Address": "36 Sewall St, Somerville, MA 02145",
       "Phone Number": "[]",
@@ -320,7 +321,7 @@
       "Longitude": "-71.09224593"
     },
     {
-      "Name": "Sommerville Community Fridge",
+      "Name": "Somerville Community Fridge (St Clements Rd)",
       "Brief Description": "One of three Somerville Community Fridges, located at 33 St. Clement Road in Medford.",
       "Address": "33 St Clements Rd, Medford, MA 02155",
       "Phone Number": "[]",
@@ -342,7 +343,7 @@
       "Longitude": "-71.08094912"
     },
     {
-      "Name": "St. Monica񳠆ood Pantry",
+      "Name": "St. Monica Food Pantry",
       "Brief Description": "Has a mission to provide weekly groceries for individuals and families living with hunger as well as emergency meals and food for anyone who knocks on their door.",
       "Address": "St. Monica's Lower Church Hall, 331 Old Colony Avenue, South Boston, MA 02127",
       "Phone Number": "['(617) 268-8100']",
@@ -376,7 +377,7 @@
     },
     {
       "Name": "The Faneuil Street Fridge",
-      "Brief Description": "Set up outside Oliveira񳠄eli Market in Oak Square. Could contain fresh produce, pantry items, prepared meals, water, etc.",
+      "Brief Description": "Set up outside Oliveira Deli Market in Oak Square. Could contain fresh produce, pantry items, prepared meals, water, etc.",
       "Address": "243 Faneuil St, Brighton, MA 02135",
       "Phone Number": "[]",
       "Website": "https://www.instagram.com/allstonbrightonfridges/",
@@ -386,7 +387,7 @@
       "Longitude": "-71.160112"
     },
     {
-      "Name": "The Salvation Army񳠃ommunity Feeding Program",
+      "Name": "The Salvation Army Community Feeding Program",
       "Brief Description": "The Salvation Army serves meals daily to participants at their Drop-In Shelter, The Lodge, Senior Citizens, and the children of Our Place. Cambridge residents join every Wednesday night for a community dinner. Anyone in need of a warm, nutritious meal is welcome.",
       "Address": "402 Massachusetts Avenue, Cambridge, MA",
       "Phone Number": "['(617) 547-3400']",
@@ -398,7 +399,7 @@
     },
     {
       "Name": "Watertown Community Fridge",
-      "Brief Description": "𔡫e what you need, give what you can񠦲idge open 24/7.",
+      "Brief Description": "See what you need, give what you can. Community Fridge open 24/7.",
       "Address": "1084 Belmont St, Watertown, MA 02472",
       "Phone Number": "[]",
       "Website": "https://www.watertowncommunityfridge.org/",
@@ -408,7 +409,7 @@
       "Longitude": "-71.198098"
     },
     {
-      "Name": "Women񳠌unch Place",
+      "Name": "Women\u2019s Lunch Place",
       "Brief Description": "A nutritious breakfast and lunch, seasonal gear, toiletries, undergarments, feminine hygiene products, and other basic necessities are always available at our 67 Newbury St. location. Also provide one-on-one assistance to women experiencing homelesness from a daytime shelter and advocacy center in Boston.",
       "Address": "67 Newbury Street, Boston, MA 02116",
       "Phone Number": "['(617) 267-1722']",

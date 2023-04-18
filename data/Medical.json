@@ -13,7 +13,7 @@
     },
     {
       "Name": "Bridge Over Troubled Waters",
-      "Brief Description": "Bridge񳠬icensed clinical counselors are trained and experienced in working specifically with homeless youth and utilize a variety of counseling methods tailored to each youth, including trauma-informed and positive youth development approaches. Counselors 𭥥t youth where they񲥠at񠤵ring their initial intake and set up appointments for follow-up counseling sessions or provide referrals to Bridge񳠩n-house services or outside agencies.",
+      "Brief Description": "Bridge\u2019s licensed clinical counselors are trained and experienced in working specifically with homeless youth and utilize a variety of counseling methods tailored to each youth, including trauma-informed and positive youth development approaches. Counselors \u201cmeet youth where they\u2019re at\u201d during their initial intake and set up appointments for follow-up counseling sessions or provide referrals to Bridge\u2019s in-house services or outside agencies.",
       "Address": "47 West St (4th Floor), Boston, MA 02111",
       "Phone Number": "['(617) 423-9575']",
       "Website": "https://bridgeotw.org/",
@@ -57,7 +57,8 @@
     },
     {
       "Name": "Salvation Army Clinic",
-      "Brief Description": "Clinic hours are generally Monday from 1 to 3pm; Tuesday from 10am to 12pm; Wednesday from 7am to 12pm; Thursday from 9am to 1pm; and Friday from 9am to 12pm. Staff at the Salvation Army clinics also serve homeless children enrolled in the Salvation Army񳠣hild care program.",
+      "Brief Description": "Clinic hours are generally Monday from 1 to 3pm; Tuesday from 10am to 12pm; Wednesday from 7am to 12pm; Thursday from 9am to 1pm; and Friday from 9am to 12pm. Staff at the Salvation Army clinics also serve homeless children enrolled in the Salvation Army Child care program.",
+
       "Address": "402 Massachusetts Ave, Cambridge, MA 02139",
       "Phone Number": "['(617) 547-3400']",
       "Website": "",
@@ -67,7 +68,7 @@
       "Longitude": "-71.10047124"
     },
     {
-      "Name": "CASPAR񳠅mergency Service Center",
+      "Name": "CASPAR Emergency Service Center",
       "Brief Description": "Clinic offered by Health Care for the Homeless in collaboration with CASPAR. No gender restrictions.",
       "Address": "240 Albany St, Cambridge, MA 02139",
       "Phone Number": "['(617) 661-0600']",

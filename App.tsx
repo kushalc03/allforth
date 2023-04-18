@@ -1,47 +1,15 @@
-import {View, PermissionsAndroid, Alert, Platform} from 'react-native';
+import {PermissionsAndroid, Alert, Platform} from 'react-native';
 
-import * as Realm from "realm-web";
-import styles from './styles/style';
 import Geolocation from '@react-native-community/geolocation';
 import React, {useState, useEffect} from 'react';
 import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink} from '@apollo/client';
 import BostonMap from './src/bostonmap';
 
+import AllforthMap from './components/AllforthMap';
+
 function App(this: any): JSX.Element {
   const [, setLocation] = useState<any>(null);
 
-  // Initialize Apollo Client
-// Connect to your MongoDB Realm app
-  const app = new Realm.App('allforth-cbfrg');
-  // Gets a valid Realm user access token to authenticate requests
-  async function getValidAccessToken() {
-    // Guarantee that there's a logged in user with a valid access token
-    if (!app.currentUser) {
-      // If no user is logged in, log in an anonymous user. The logged in user will have a valid
-      // access token.
-      await app.logIn(Realm.Credentials.anonymous());
-    } else {
-      // An already logged in user's access token might be stale. Tokens must be refreshed after 
-      // 30 minutes. To guarantee that the token is valid, we refresh the user's access token.
-      await app.currentUser.refreshAccessToken();
-    }
-
-  const client = new ApolloClient({
-    link: new HttpLink({
-      uri: `https://realm.mongodb.com/api/client/v2.0/app/${allforth-cbfrg}/graphql`,
-      // We define a custom fetch handler for the Apollo client that lets us authenticate GraphQL requests.
-      // The function intercepts every Apollo HTTP request and adds an Authorization header with a valid
-      // access token before sending the request.
-      fetch: async (uri, options) => {
-        const accessToken = await getValidAccessToken();
-        options.headers.Authorization = `Bearer ${accessToken}`;
-        return fetch(uri, options);
-      },
-    }),
-    cache: new InMemoryCache(),
-  });
-
-  // Location Permission
   const requestLocationPermission = async () => {
     try {
       if (Platform.OS === 'android') {
@@ -85,12 +53,26 @@ function App(this: any): JSX.Element {
     requestLocationPermission();
   }, []);
 
+  // const initialRegion = {
+  //   latitude: 42.3601,
+  //   longitude: -71.0589,
+  //   latitudeDelta: 0.1,
+  //   longitudeDelta: 0.1,
+  // };
+  // default initial region is Harvard Square
   return (
-    <ApolloProvider client={client}>
-      <View style={styles.map}>
-        <BostonMap />
-      </View>
-    </ApolloProvider>
+    <AllforthMap />
+    // <View style={styles.map}>
+    //   <MapView
+    //     style={styles.map}
+    //     initialRegion={initialRegion}
+    //     showsUserLocation={true}>
+    //     {mapMedicalMarkers()}
+    //     {mapFoodMarkers()}
+    //     {mapAddictionRecoveryMarkers()}
+    //     {mapHousingMarkers()}
+    //   </MapView>
+    // </View>
   );
 }
 

@@ -17,7 +17,8 @@
       "Brief Description": "Student-run overnight shelter that provides 24 homeless individuals at a time with a safe, clean, and caring place to stay during the winter months. In addition to temporary shelter, HSHS also provides counseling resources and a transitional program for guests who are employed and committed to saving money towards securing housing.",
       "Phone Number": "['(617) 547-2841']",
       "Website": "਴tps://www.harvardsquare.com/venue/harvard-square-homeless-shelter/",
-      "Hours": "Overnight Shelter. Open from November 15th until April 15th; 7:30-8am lottery for 14-day beds; 9-9:30pm for single night beds, 11pm last call lottery for single night beds.\u0000",
+      "Hours": "Overnight Shelter. Open from November 15th until April 15th; 7:30-8am lottery for 14-day beds; 9-9:30pm for single night beds, 11pm last call lottery for single night beds.",
+
       "Qualifications": "18+, criminal record allowed, no substances allowed - dry shelter, has accessability",
       "Latitude": "42.3717627",
       "Longitude": "-71.12012862"
@@ -34,9 +35,9 @@
       "Longitude": "-71.0644988"
     },
     {
-      "Name": "Pine Street Inn Shelters - Women's Inn",
+      "Name": "Pine Street Inn Shelters - Women\u2019s Inn",
       "Address": "363 Albany St, Boston, MA 02118",
-      "Brief Description": "Women񳠉nn is open 24/7/365 and provides a safe, supportive, and welcoming environment for 81 guests each night. Staff members work with guests to create a pathway to permanent supportive housing, providing connections to critical services that help reduce the lengths of homelessness and support each individual in their housing goal.",
+      "Brief Description": "Women\u2019s Inn is open 24/7/365 and provides a safe, supportive, and welcoming environment for 81 guests each night. Staff members work with guests to create a pathway to permanent supportive housing, providing connections to critical services that help reduce the lengths of homelessness and support each individual in their housing goal.",
       "Phone Number": "['(617) 892-9100', '(617) 892-9228']",
       "Website": "https://www.pinestreetinn.org/programs/emergency-services/emergency-shelter",
       "Hours": "open 24/7/365 days a year",
@@ -63,13 +64,13 @@
       "Website": "https://www.pinestreetinn.org/programs/emergency-services/emergency-shelter",
       "Hours": "open 24/7/365 days a year",
       "Qualifications": "This is a referral-only sober living shelter. Guests are referred from Pine Street񳠍en񳠉nn and Shattuck Shelter. All guests must be actively seeking housing.",
-      "Latitude": "",
-      "Longitude": ""
+      "Latitude": "42.316990",
+      "Longitude": "-71.072578"
     },
     {
       "Name": "Southhampton St. Men's Shelter",
       "Address": "112 Southampton St, Boston, MA 02118 ",
-      "Brief Description": "Beds are first come first serve. Offer breakfast (5:30am-6am), lunch (11pm), and dinner (4:30pm). ",
+      "Brief Description": "Beds are first come first serve. Offer breakfast (5:30am-6am), lunch (11pm), and dinner (4:30pm).",
       "Phone Number": "['(617) 534-6100']",
       "Website": "https://www.bhchp.org/locations/southampton-street-shelter/",
       "Hours": "7 days a week and 24/7",
