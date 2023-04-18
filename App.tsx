@@ -2,13 +2,13 @@ import {PermissionsAndroid, Alert, Platform} from 'react-native';
 
 import Geolocation from '@react-native-community/geolocation';
 import React, {useState, useEffect} from 'react';
+import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink} from '@apollo/client';
+import BostonMap from './src/bostonmap';
 
 import AllforthMap from './components/AllforthMap';
 
 function App(this: any): JSX.Element {
-  const [location, setLocation] = useState<any>(null);
-
-  // const app = new Realm.App('allforth-cbfrg');
+  const [, setLocation] = useState<any>(null);
 
   const requestLocationPermission = async () => {
     try {
