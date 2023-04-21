@@ -1,13 +1,12 @@
-import {PermissionsAndroid, Alert, Platform} from 'react-native';
+import {PermissionsAndroid, Alert, Platform, SafeAreaView} from 'react-native';
 
 import Geolocation from '@react-native-community/geolocation';
 import React, {useState, useEffect} from 'react';
-import {ApolloClient, InMemoryCache, ApolloProvider, HttpLink} from '@apollo/client';
-import BostonMap from './src/bostonmap';
 
 import AllforthMap from './components/AllforthMap';
+import MenuTab from './components/MenuTab';
 
-function App(this: any): JSX.Element {
+function App(): JSX.Element {
   const [, setLocation] = useState<any>(null);
 
   const requestLocationPermission = async () => {
@@ -53,26 +52,11 @@ function App(this: any): JSX.Element {
     requestLocationPermission();
   }, []);
 
-  // const initialRegion = {
-  //   latitude: 42.3601,
-  //   longitude: -71.0589,
-  //   latitudeDelta: 0.1,
-  //   longitudeDelta: 0.1,
-  // };
-  // default initial region is Harvard Square
   return (
-    <AllforthMap />
-    // <View style={styles.map}>
-    //   <MapView
-    //     style={styles.map}
-    //     initialRegion={initialRegion}
-    //     showsUserLocation={true}>
-    //     {mapMedicalMarkers()}
-    //     {mapFoodMarkers()}
-    //     {mapAddictionRecoveryMarkers()}
-    //     {mapHousingMarkers()}
-    //   </MapView>
-    // </View>
+    <SafeAreaView style={{flex: 1}}>
+      <AllforthMap />
+      <MenuTab />
+    </SafeAreaView>
   );
 }
 
