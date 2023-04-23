@@ -7,11 +7,14 @@ import {
   Dimensions,
   Text,
   Switch,
+  SafeAreaView,
+  Linking,
 } from 'react-native';
 import {PanGestureHandler, State} from 'react-native-gesture-handler';
+import AllforthMap from './AllforthMap';
 
 const screenHeight = Dimensions.get('window').height;
-const initialMenuHeight = screenHeight * 0.8;
+const initialMenuHeight = screenHeight * 0.85;
 
 const Option: React.FC<{
   label: string;
@@ -38,27 +41,48 @@ const MenuTab: React.FC = () => {
   );
 
   const toggleMenu = () => {
-    Animated.timing(translateY, {
-      toValue: open ? initialMenuHeight : 0,
-      duration: 300,
+    const toValue = open ? initialMenuHeight : 20;
+    Animated.spring(translateY, {
+      toValue: toValue,
       useNativeDriver: true,
     }).start();
-    setOpen(!open);
   };
 
   const onHandlerStateChange = (event: any) => {
     if (event.nativeEvent.oldState === State.ACTIVE) {
       const translationY = event.nativeEvent.translationY;
-      if (!open && translationY > screenHeight * 0.1) {
-        toggleMenu();
-      } else if (open && translationY < screenHeight * -0.1) {
-        toggleMenu();
+      if (open) {
+        if (translationY > 0) {
+          Animated.spring(translateY, {
+            toValue: initialMenuHeight,
+            speed: 0.3,
+            bounciness: 5,
+            useNativeDriver: true,
+          }).start();
+        } else {
+          Animated.spring(translateY, {
+            toValue: 20,
+            bounciness: 5,
+            speed: 0.3,
+            useNativeDriver: true,
+          }).start();
+        }
       } else {
-        Animated.spring(translateY, {
-          toValue: open ? 0 : initialMenuHeight,
-          bounciness: 5,
-          useNativeDriver: true,
-        }).start();
+        if (translationY < 0) {
+          Animated.spring(translateY, {
+            toValue: 20,
+            bounciness: 5,
+            speed: 0.3,
+            useNativeDriver: true,
+          }).start();
+        } else {
+          Animated.spring(translateY, {
+            toValue: initialMenuHeight,
+            speed: 0.3,
+            bounciness: 5,
+            useNativeDriver: true,
+          }).start();
+        }
       }
     }
   };
@@ -72,47 +96,58 @@ const MenuTab: React.FC = () => {
 
   const handleSwitch = (option: string, value: boolean) => {
     setSwitchStates({...switchStates, [option]: value});
-    console.log(`Function here for ${option}`);
   };
 
   return (
-    <PanGestureHandler
-      onGestureEvent={onGestureEvent}
-      onHandlerStateChange={onHandlerStateChange}>
-      <Animated.View
-        style={[
-          styles.container,
-          {
-            transform: [{translateY: translateY}],
-          },
-        ]}>
-        <TouchableOpacity style={styles.menuBar} onPress={toggleMenu}>
-          <Text style={styles.menuBarText}>Open Menu</Text>
-        </TouchableOpacity>
-        <View style={styles.optionsContainer}>
-          <Option
-            label="Food"
-            value={switchStates.option1}
-            onValueChange={value => handleSwitch('option1', value)}
-          />
-          <Option
-            label="Housing"
-            value={switchStates.option2}
-            onValueChange={value => handleSwitch('option2', value)}
-          />
-          <Option
-            label="Medical"
-            value={switchStates.option3}
-            onValueChange={value => handleSwitch('option3', value)}
-          />
-          <Option
-            label="Addiction Recovery"
-            value={switchStates.option4}
-            onValueChange={value => handleSwitch('option4', value)}
-          />
-        </View>
-      </Animated.View>
-    </PanGestureHandler>
+    <SafeAreaView style={{flex: 1}}>
+      <AllforthMap switchStates={switchStates} />
+      <PanGestureHandler
+        onGestureEvent={onGestureEvent}
+        onHandlerStateChange={onHandlerStateChange}>
+        <Animated.View
+          style={[
+            styles.container,
+            {
+              transform: [{translateY: translateY}],
+            },
+          ]}>
+          <TouchableOpacity style={styles.menuBar} onPress={toggleMenu}>
+            <Text style={styles.menuBarText}>Open Menu</Text>
+          </TouchableOpacity>
+          <View style={[styles.optionsContainer]}>
+            <Option
+              label="Food"
+              value={switchStates.option1}
+              onValueChange={value => handleSwitch('option1', value)}
+            />
+            <Option
+              label="Housing"
+              value={switchStates.option2}
+              onValueChange={value => handleSwitch('option2', value)}
+            />
+            <Option
+              label="Medical"
+              value={switchStates.option3}
+              onValueChange={value => handleSwitch('option3', value)}
+            />
+            <Option
+              label="Addiction Recovery"
+              value={switchStates.option4}
+              onValueChange={value => handleSwitch('option4', value)}
+            />
+          </View>
+          <Text
+            style={{color: 'blue', textAlign: 'center'}}
+            onPress={() =>
+              Linking.openURL(
+                'https://docs.google.com/forms/d/e/1FAIpQLSdb19lWzvYQZyx4tpoA7E9SlNgEhD3MfQbB3WoiBFu3_HWBCQ/viewform?usp=sf_link',
+              )
+            }>
+            Feedback?
+          </Text>
+        </Animated.View>
+      </PanGestureHandler>
+    </SafeAreaView>
   );
 };
 

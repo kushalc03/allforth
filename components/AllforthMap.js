@@ -15,17 +15,17 @@ const initialRegion = {
   longitudeDelta: 0.1,
 };
 
-const AllforthMap = () => {
+const AllforthMap = ({switchStates}) => {
   return (
     <View style={styles.map}>
       <MapView
         style={styles.map}
         initialRegion={initialRegion}
         showsUserLocation={true}>
-        <MapAddictionRecoveryMarkers />
-        <MapFoodMarkers />
-        <MapMedicalMarkers />
-        <MapHousingMarkers />
+        {switchStates.option1 ? <MapFoodMarkers /> : null}
+        {switchStates.option2 ? <MapHousingMarkers /> : null}
+        {switchStates.option3 ? <MapMedicalMarkers /> : null}
+        {switchStates.option4 ? <MapAddictionRecoveryMarkers /> : null}
       </MapView>
     </View>
   );
