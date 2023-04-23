@@ -8,6 +8,7 @@ import {
   Text,
   Switch,
   SafeAreaView,
+  Linking,
 } from 'react-native';
 import {PanGestureHandler, State} from 'react-native-gesture-handler';
 import AllforthMap from './AllforthMap';
@@ -74,7 +75,6 @@ const MenuTab: React.FC = () => {
 
   const handleSwitch = (option: string, value: boolean) => {
     setSwitchStates({...switchStates, [option]: value});
-    console.log(`${switchStates.option1}`);
   };
 
   return (
@@ -115,6 +115,15 @@ const MenuTab: React.FC = () => {
               onValueChange={value => handleSwitch('option4', value)}
             />
           </View>
+          <Text
+            style={{color: 'blue', textAlign: 'center'}}
+            onPress={() =>
+              Linking.openURL(
+                'https://docs.google.com/forms/d/e/1FAIpQLSdb19lWzvYQZyx4tpoA7E9SlNgEhD3MfQbB3WoiBFu3_HWBCQ/viewform?usp=sf_link',
+              )
+            }>
+            Feedback?
+          </Text>
         </Animated.View>
       </PanGestureHandler>
     </SafeAreaView>
