@@ -114,7 +114,7 @@ const MenuTab: React.FC = () => {
           <TouchableOpacity style={styles.menuBar} onPress={toggleMenu}>
             <Text style={styles.menuBarText}>Open Menu</Text>
           </TouchableOpacity>
-          <View style={[styles.optionsContainer]}>
+          <View style={styles.optionsContainer}>
             <Option
               label="Food"
               value={switchStates.option1}
