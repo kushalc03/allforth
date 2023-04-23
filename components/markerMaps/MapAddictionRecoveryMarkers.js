@@ -7,6 +7,7 @@ import styles from '../../styles/StyleSheet';
 
 export function MapAddictionRecoveryMarkers() {
   return addictionRecoveryData.Sheet1.map(item => (
+    <View>
     <Marker
       key={item.Name}
       coordinate={{
@@ -35,6 +36,7 @@ export function MapAddictionRecoveryMarkers() {
         </View>
       </Callout>
     </Marker>
+    </View>
   ));
 }
 
