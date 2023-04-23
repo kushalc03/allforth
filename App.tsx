@@ -1,9 +1,8 @@
-import {PermissionsAndroid, Alert, Platform, SafeAreaView} from 'react-native';
+import {PermissionsAndroid, Alert, Platform} from 'react-native';
 
 import Geolocation from '@react-native-community/geolocation';
 import React, {useState, useEffect} from 'react';
 
-import AllforthMap from './components/AllforthMap';
 import MenuTab from './components/MenuTab';
 
 function App(): JSX.Element {
@@ -52,12 +51,7 @@ function App(): JSX.Element {
     requestLocationPermission();
   }, []);
 
-  return (
-    <SafeAreaView style={{flex: 1}}>
-      <AllforthMap />
-      <MenuTab />
-    </SafeAreaView>
-  );
+  return <MenuTab />;
 }
 
 export default App;
