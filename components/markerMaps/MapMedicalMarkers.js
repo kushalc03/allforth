@@ -32,8 +32,8 @@ export function MapMedicalMarkers() {
           </Text>
           <Text
             style={styles.textCalloutAddress}
-            onPress={() => Linking.openURL(`tel:${item['Phone Number'][0]}`)}>
-            {'\u{1F4DE}'} {item['Phone Number'][0]}
+            onPress={() => Linking.openURL(`tel:${item['Phone Number']}`)}>
+            {'\u{1F4DE}'} {item['Phone Number']}
           </Text>
           <Text style={styles.textCallout}>{item['Brief Description']}</Text>
           <View style={{flex: 0.1}} />
