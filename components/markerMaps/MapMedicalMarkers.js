@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Linking} from 'react-native';
 import MapView, {Marker, Callout} from 'react-native-maps';
 import {showLocation} from 'react-native-map-link';
 import medicalData from '../../data/Medical.json';
@@ -29,6 +29,11 @@ export function MapMedicalMarkers() {
               })
             }>
             {'\u{1F5FA}\u{FE0F}'} {item.Address}
+          </Text>
+          <Text
+            style={styles.textCalloutAddress}
+            onPress={() => Linking.openURL(`tel:${item['Phone Number'][0]}`)}>
+            {'\u{1F4DE}'} {item['Phone Number'][0]}
           </Text>
           <Text style={styles.textCallout}>{item['Brief Description']}</Text>
           <View style={{flex: 0.1}} />
