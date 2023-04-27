@@ -10,11 +10,10 @@ import {
   SafeAreaView,
   Linking,
 } from 'react-native';
-import {PanGestureHandler, State} from 'react-native-gesture-handler';
 import AllforthMap from './AllforthMap';
 
 const screenHeight = Dimensions.get('window').height;
-const initialMenuHeight = screenHeight * 0.85;
+const initialMenuHeight = screenHeight * 0.46;
 
 const Option: React.FC<{
   label: string;
@@ -32,59 +31,15 @@ const Option: React.FC<{
 const MenuTab: React.FC = () => {
   const [open, setOpen] = useState(false);
   const translateY = new Animated.Value(initialMenuHeight);
-
-  const onGestureEvent = Animated.event(
-    [{nativeEvent: {translationY: translateY}}],
-    {
-      useNativeDriver: true,
-    },
-  );
-
   const toggleMenu = () => {
-    const toValue = open ? initialMenuHeight : 20;
+    const toValue = open ? initialMenuHeight : screenHeight * 0.06;
     Animated.spring(translateY, {
       toValue: toValue,
-      useNativeDriver: true,
-    }).start();
-  };
-
-  const onHandlerStateChange = (event: any) => {
-    if (event.nativeEvent.oldState === State.ACTIVE) {
-      const translationY = event.nativeEvent.translationY;
-      if (open) {
-        if (translationY > 0) {
-          Animated.spring(translateY, {
-            toValue: initialMenuHeight,
-            speed: 0.3,
-            bounciness: 5,
-            useNativeDriver: true,
-          }).start();
-        } else {
-          Animated.spring(translateY, {
-            toValue: 20,
-            bounciness: 5,
-            speed: 0.3,
-            useNativeDriver: true,
-          }).start();
-        }
-      } else {
-        if (translationY < 0) {
-          Animated.spring(translateY, {
-            toValue: 20,
-            bounciness: 5,
-            speed: 0.3,
-            useNativeDriver: true,
-          }).start();
-        } else {
-          Animated.spring(translateY, {
-            toValue: initialMenuHeight,
-            speed: 0.3,
-            bounciness: 5,
-            useNativeDriver: true,
-          }).start();
-        }
-      }
-    }
+      bounciness: 2,
+      useNativeDriver: false,
+    }).start(() => {
+      setOpen(!open);
+    });
   };
 
   const [switchStates, setSwitchStates] = useState({
@@ -101,52 +56,48 @@ const MenuTab: React.FC = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       <AllforthMap switchStates={switchStates} />
-      <PanGestureHandler
-        onGestureEvent={onGestureEvent}
-        onHandlerStateChange={onHandlerStateChange}>
-        <Animated.View
-          style={[
-            styles.container,
-            {
-              transform: [{translateY: translateY}],
-            },
-          ]}>
-          <TouchableOpacity style={styles.menuBar} onPress={toggleMenu}>
-            <Text style={styles.menuBarText}>Open Menu</Text>
-          </TouchableOpacity>
-          <View style={styles.optionsContainer}>
-            <Option
-              label="Food"
-              value={switchStates.option1}
-              onValueChange={value => handleSwitch('option1', value)}
-            />
-            <Option
-              label="Housing"
-              value={switchStates.option2}
-              onValueChange={value => handleSwitch('option2', value)}
-            />
-            <Option
-              label="Medical"
-              value={switchStates.option3}
-              onValueChange={value => handleSwitch('option3', value)}
-            />
-            <Option
-              label="Addiction Recovery"
-              value={switchStates.option4}
-              onValueChange={value => handleSwitch('option4', value)}
-            />
-          </View>
-          <Text
-            style={{color: 'blue', textAlign: 'center'}}
-            onPress={() =>
-              Linking.openURL(
-                'https://docs.google.com/forms/d/e/1FAIpQLSdb19lWzvYQZyx4tpoA7E9SlNgEhD3MfQbB3WoiBFu3_HWBCQ/viewform?usp=sf_link',
-              )
-            }>
-            Feedback?
-          </Text>
-        </Animated.View>
-      </PanGestureHandler>
+      <Animated.View
+        style={[
+          styles.container,
+          {
+            transform: [{translateY: translateY}],
+          },
+        ]}>
+        <TouchableOpacity style={styles.menuBar} onPress={toggleMenu}>
+          <Text style={styles.menuBarText}>Filter Resources By Category</Text>
+        </TouchableOpacity>
+        <View style={styles.optionsContainer}>
+          <Option
+            label="Food"
+            value={switchStates.option1}
+            onValueChange={value => handleSwitch('option1', value)}
+          />
+          <Option
+            label="Housing"
+            value={switchStates.option2}
+            onValueChange={value => handleSwitch('option2', value)}
+          />
+          <Option
+            label="Medical"
+            value={switchStates.option3}
+            onValueChange={value => handleSwitch('option3', value)}
+          />
+          <Option
+            label="Addiction Recovery"
+            value={switchStates.option4}
+            onValueChange={value => handleSwitch('option4', value)}
+          />
+        </View>
+        <Text
+          style={{color: 'rgba(255,165,0,1)', textAlign: 'center'}}
+          onPress={() =>
+            Linking.openURL(
+              'https://docs.google.com/forms/d/e/1FAIpQLSdb19lWzvYQZyx4tpoA7E9SlNgEhD3MfQbB3WoiBFu3_HWBCQ/viewform?usp=sf_link',
+            )
+          }>
+          Feedback?
+        </Text>
+      </Animated.View>
     </SafeAreaView>
   );
 };
@@ -161,10 +112,9 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 0,
     width: '100%',
-    height: screenHeight,
+    height: screenHeight * 0.55,
     paddingTop: 10,
     paddingHorizontal: 20,
-    marginBottom: -50,
   },
   menuBar: {
     width: '90%',
@@ -197,6 +147,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'white',
     textAlign: 'center',
+    // fontWeight: 'bold',
   },
   menuBarTouchable: {
     justifyContent: 'center',
