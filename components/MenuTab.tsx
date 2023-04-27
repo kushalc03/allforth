@@ -54,7 +54,7 @@ const MenuTab: React.FC = () => {
   };
 
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <>
       <AllforthMap switchStates={switchStates} />
       <Animated.View
         style={[
@@ -98,7 +98,7 @@ const MenuTab: React.FC = () => {
           Feedback?
         </Text>
       </Animated.View>
-    </SafeAreaView>
+    </>
   );
 };
 
@@ -147,7 +147,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'white',
     textAlign: 'center',
-    // fontWeight: 'bold',
   },
   menuBarTouchable: {
     justifyContent: 'center',
@@ -156,5 +155,16 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 20,
     width: '100%',
     height: '100%',
+  },
+  banner: {
+    width: '100%',
+    height: '20%',
+    alignSelf: 'center',
+    backgroundColor: 'red',
+    justifyContent: 'center',
+  },
+  headerText: {
+    fontSize: 20,
+    color: 'white',
   },
 });
