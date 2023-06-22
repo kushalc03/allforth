@@ -4,7 +4,7 @@
       "Name": "Cambridge Health Alliance Addiction Services",
       "Brief Description": "Provides a range of addiction treatment services including outpatient care, intensive outpatient care, medication-assisted treatment, and detoxification.",
       "Address": "Cambridge Hospital, 1493 Cambridge St, Cambridge MA 02139",
-      "Phone Number": "['(617) 665-1000']",
+      "Phone Number": "(617) 665-1000",
       "Website": "https://www.challiance.org/services-programs/mental-health-and-substance-use/substance-use-addiction",
       "Hours": "24 hours",
       "Gender": "",
@@ -21,7 +21,7 @@
       "Name": "Riverside Outpatient Center - Cambridge",
       "Brief Description": "Provides addiction treatment and mental health services for adults and adolescents.",
       "Address": "5th floor (Schwartz Hall, Doble Campus), 23 Mellen Street, Cambridge, MA 02138",
-      "Phone Number": "['(857) 331-6331']",
+      "Phone Number": "(857) 331-6331",
       "Website": "https://www.riversidecc.org/adult-services/mental-health/outpatient-services/outpatient-counseling-medication/riverside-outpatient-center-at-cambridge/",
       "Hours": "Mon-Fri: 8am-8pm,  Sat: 8am-2pm",
       "Gender": "",
@@ -38,7 +38,7 @@
       "Name": "Lotus Center for Recovery",
       "Brief Description": "Drug Rehab and Alcohol Detox Specialist",
       "Address": "650 Cambridge St, Cambridge, MA 02141",
-      "Phone Number": "['(617) 684-6143']",
+      "Phone Number": "(617) 684-6143",
       "Website": "",
       "Hours": "24 hours",
       "Gender": "",
@@ -55,7 +55,7 @@
       "Name": "North Charles Addiction Treatment Center",
       "Brief Description": "Provides residential addiction treatment services for adults and medication-assisted treatment for opioid addiction.",
       "Address": "54 Washburn Ave, Cambridge, MA 02140",
-      "Phone Number": "['(617) 661-5700']",
+      "Phone Number": "(617) 661-5700",
       "Website": "http://www.northcharles.org/",
       "Hours": "Mon-Thurs: 8 AM - 7:15 PM; Friday 8 AM - 4 PM",
       "Gender": "",
@@ -72,7 +72,7 @@
       "Name": "Drug Rehabilitation Cambridge",
       "Brief Description": "Drug addiction, mental health, and substance abuse treatment facility",
       "Address": "Alewife Brook Pkwy, Cambridge, MA 02138",
-      "Phone Number": "['(617) 812-4327']",
+      "Phone Number": "(617) 812-4327",
       "Website": "https://www.bennettrecovery.com/cambridge-massachusetts/",
       "Hours": "24/7",
       "Gender": "",
@@ -89,7 +89,7 @@
       "Name": "MHSA Recovery Program Answer House",
       "Brief Description": "MHSA\u0027s Recovery programs provide intensive substance use disorder recovery services in Greater Boston to help patients achieve sobriety and transition into stable, sober living environments.",
       "Address": "5 G Street, South Boston, MA 02127",
-      "Phone Number": "['(781) 296-2653']",
+      "Phone Number": "(781) 296-2653",
       "Website": "https://www.mhsainc.org/recovery",
       "Hours": "24/7",
       "Gender": "Male",
@@ -106,7 +106,7 @@
       "Name": "Access\u002c Harm Reduction\u002c Overdose Prevention and Education \u0028AHOPE\u0029",
       "Brief Description": "City of Boston\u2019s harm reduction and needle exchange site providing integrated HIV\u002c Hepatitis\u002c and STI testing\u002c free\u002c legal\u002c and anonymous needle exchange\u002c supported referrals to HIV\u002c Hepatitis\u002c STI treatment\u002c and medical help\u002c overdose prevention education and training risk reduction supplies to reduce the spread of HIV and Hepatitis C infection risk reduction counseling\u002c and referrals to all kinds of substance use treatment programs.",
       "Address": "774 Albany Street\u002c Boston\u002c MA 02118",
-      "Phone Number": "['(617) 534-3976']",
+      "Phone Number": "(617) 534-3976",
       "Website": "https://www.boston.gov/government/cabinets/boston-public-health-commission/recovery-services/services-active-users",
       "Hours": "Mon-Fri\u002c 7:30am-3pm",
       "Gender": "",
@@ -123,7 +123,7 @@
       "Name": "Community Care In Reach Van",
        "Brief Description": "Connect on Instagram @CCiRBoston! Van staffed by AHOPE and BHCHP staff providing addiction services (meds, referrals), harm reduction tools (narcan, syringe exchange, counseling), and preventive care (tests, immunizations). Locations as follows: Monday, 9a.m.-12 p.m. @ Envision Hotel in Jamaica Plain, Monday 1-4 p.m. @ Mr. G’s lot in Nubian Square, Tuesday 4-7 p.m. is a roaming delivery service for young adults (connect via @CCiRBoston), Wednesday 9 a.m.-12 p.m. @ Roundhouse Hotel in South End, Wednesday 1-4 p.m. @ Mr. G’s lot in Nubian Square, Thursday 1-4 p.m. @ Haverhill Street in the West End, Thursday 5-8 p.m., roaming delivery service for young adults (connect via @CCiRBoston), Friday 9 a.m.-12 p.m. @ the Cottages on the Shattuck campus.",
        "Address": "Varies - connect via Instagram @CCiRBoston",
-       "Phone Number": "['(857) 654-1000']",
+       "Phone Number": "(857) 654-1000",
        "Website": "https://www.bhchp.org/services/community-care-in-reach-ccir-mobile-addiction-program/",
        "Hours": "Mon-Fri, 9am-4pm",
        "Gender": "",
@@ -140,7 +140,7 @@
       "Name": "PAATHS (Providing Access to Addictions Treatment, Hope and Support) Program",
      "Brief Description": "Helps individuals, families, community partners, and other treatment providers dealing with addiction through phone support, community support, and walk-in services. No insurance needed, Spanish speaking staff available.",
      "Address": "774 Albany Street",
-     "Phone Number": "['(617) 534-3599']",
+     "Phone Number": "(617) 534-3599",
      "Website": "https://www.boston.gov/government/cabinets/boston-public-health-commission/recovery-services/find-your-path-recovery",
      "Hours": "Mon-Fri, 7:30am-4pm",
      "Gender": "",
@@ -150,14 +150,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.8070577,
-     "Longitude": -73.9368675
+     "Latitude": "42.8070577",
+     "Longitude": "-73.9368675"
     },
     {
       "Name": "Entre Familia",
      "Brief Description": "This is a six- to 12-month residential substance use treatment program. Entre Familia provides bilingual and bicultural, gender-specific, substance use disorder treatment to pregnant and postpartum women and their children. The program provides substance use disorders (SUDs) recovery services. Support is offered to pregnant and postpartum women who are 18 and older and Massachusetts residents.",
      "Address": "211 River Street, Mattapan, MA 02126",
-     "Phone Number": "['(617) 534-2922']",
+     "Phone Number": "(617) 534-2922",
      "Website": "https://www.boston.gov/government/cabinets/boston-public-health-commission/mental-and-emotional-health/entre-familia",
      "Hours": "",
      "Gender": "Female",
@@ -167,14 +167,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.2734529,
-     "Longitude": -71.0818988
+     "Latitude": "42.2734529",
+     "Longitude": "-71.0818988"
     },
     {
       "Name": "Transitions",
      "Brief Description": "Transitions is a 40-bed, evidence-based, short-term treatment program for adults focusing on relapse prevention, behavior modification, interpersonal skill development, and re-socialization skills. Facilitated client discussion groups meet daily. The groups explore life issues related to substance use.",
      "Address": "201 River Street, Mattapan, MA 02126",
-     "Phone Number": "['(617) 534-9156']",
+     "Phone Number": "(617) 534-9156",
      "Website": "https://www.rehab.com/transitions-tss",
      "Hours": "",
      "Gender": "",
@@ -184,14 +184,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.2720976,
-     "Longitude": -71.0800893
+     "Latitude": "42.2720976",
+     "Longitude": "-71.0800893"
     },
     {
       "Name": "Wyman Recovery Home",
      "Brief Description": "30-bed, residential substance use disorders (SUDs) recovery program that allows for varied lengths of stay, with the average being 4 to 6 months. The program provides services for men who are 18 years of age and older. Services include: case management, substance use counseling, criminal and legal advocacy, counseling, substance use education and relapse prevention, HIV/ AIDS education, tobacco and gambling cessation counseling, help with family unification, and aftercare planning and referrals.",
      "Address": "201 River St, Mattapan, MA 02126",
-     "Phone Number": "['(617) 534-6187']",
+     "Phone Number": "(617) 534-6187",
      "Website": "https://hub.helplinema.org/provider_details/13168",
      "Hours": "",
      "Gender": "Male",
@@ -201,14 +201,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.2720976,
-     "Longitude": -71.0800893
+     "Latitude": "42.2720976",
+     "Longitude": "-71.0800893"
     },
     {
       "Name": "Faster Paths to Treatment",
      "Brief Description": "BMC’s substance use disorder urgent care program. It is a judgment-free home for people suffering with addiction. Staff members help individuals overcome their addiction by rapidly evaluating, motivating, and referring patients with substance use disorders to a network of care, including inpatient and outpatient detox, treatment, and aftercare services.",
      "Address": "1st Floor (RM 1N64, Yawkey Center), 850 Harrison Avenue, Boston, MA 02118",
-     "Phone Number": "['(617) 414-4580']",
+     "Phone Number": "(617) 414-4580",
      "Website": "https://www.bmc.org/faster-paths-treatment",
      "Hours": "Sun-Sat, 8:30am-4:30pm",
      "Gender": "",
@@ -218,14 +218,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.33475714,
-     "Longitude": -71.07422644
+     "Latitude": "42.33475714",
+     "Longitude": "-71.07422644"
     },
     {
       "Name": "Project TRUST",
      "Brief Description": "Project TRUST’s goal is to help anyone who is actively struggling with substance use access comprehensive and compassionate care without judgement with addiction treatment resources, harm reduction education and supplies, and navigation to an array of medical services including primary care and urgent care services. The Project TRUST team is made up of compassionate community health workers, who use their lived experience to guide people in active addiction.",
      "Address": "721 Massachusetts Avenue, Boston, MA 02118",
-     "Phone Number": "['(617) 680-1828']",
+     "Phone Number": "(617) 680-1828",
      "Website": "https://www.bmc.org/project-trust",
      "Hours": "Appointments",
      "Gender": "",
@@ -235,14 +235,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.333949,
-     "Longitude": -71.07469487
+     "Latitude": "42.333949",
+     "Longitude": "-71.07469487"
     },
     {
       "Name": "Rapid ACCESS",
      "Brief Description": "The Rapid ACCESS (Assessment, Connection, Coaching, and Engagement with SUD Services) program aims to connect patients with substance use disorders to evidence-based treatment at BMC. These programs are designed to improve and support access to existing addiction treatment programs at BMC and in the community. Team consists of recovery coaches and recovery support navigators who  work to help patients access evidence-based treatment for addiction.",
      "Address": "774 Albany Street Boston, MA 02118 (2nd Floor, Finland Building)",
-     "Phone Number": "['(617) 638-5500']",
+     "Phone Number": "(617) 638-5500",
      "Website": "https://www.bmc.org/rapid-access",
      "Hours": "Sun-Sat, 8am-6pm",
      "Gender": "",
@@ -252,14 +252,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.33466134,
-     "Longitude": -71.07171612
+     "Latitude": "42.33466134",
+     "Longitude": "-71.07171612"
     },
     {
       "Name": "BMC Office Based Addiction Treatment (OBAT)",
      "Brief Description": "The OBAT team at BMC treats patients with approved medications for substance use disorders including buprenorphine, injectable buprenorphine, injectable naltrexone, and oral naltrexone. Patients receive specialized treatment for their substance use disorder integrated within a primary care setting, allowing all their medical needs to be addressed by a team of providers.",
      "Address": "801 Massachusetts Ave Boston, MA 02119 (Crosstown Center)",
-     "Phone Number": "['(617) 414-4123']",
+     "Phone Number": "(617) 414-4123",
      "Website": "https://www.bmc.org/office-based-addiction-treatment-obat",
      "Hours": "Monday - Thursday 8:00 AM - 8:00 PM; Friday 8:00 AM - 12:00 PM",
      "Gender": "",
@@ -269,14 +269,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.33302405,
-     "Longitude": -71.07351342
+     "Latitude": "42.33302405",
+     "Longitude": "-71.07351342"
     },
     {
       "Name": "BMC Center for Addiction Treatment for AdoLescent/Young adults who use SubsTances (CATALYST) ",
      "Brief Description": "BMC Catalyst helps teens and young adults who use alcohol or drugs by providing access to a wide range of services including primary care, harm reduction, assessment and treatment of substance use disorders, psychiatry, psychotherapy, and recovery support for patients through age 25 and their families.",
      "Address": "850 Harrison Avenue, Boston, MA 02118 (6th Floor, Yawkey Center)",
-     "Phone Number": "['(617) 414-6655']",
+     "Phone Number": "(617) 414-6655",
      "Website": "https://www.bmc.org/catalyst-clinic",
      "Hours": "Monday-Friday, 9:00 AM - 5:00 PM",
      "Gender": "",
@@ -286,14 +286,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.3554334,
-     "Longitude": -71.060511
+     "Latitude": "42.3554334",
+     "Longitude": "-71.060511"
     },
     {
       "Name": "Project RESPECT",
      "Brief Description": "The Project RESPECT team at BMC supports patients throughout their recovery journey during the entire first year postpartum.",
      "Address": "850 Harrison Avenue, Boston, MA 02118 (5th Floor, Yawkey Center)",
-     "Phone Number": "['(617) 414-6376']",
+     "Phone Number": "(617) 414-6376",
      "Website": "https://www.bmc.org/obstetrics/pregnancy/addiction",
      "Hours": "Monday-Friday, 9:00 AM - 5:00 PM",
      "Gender": "Female",
@@ -303,14 +303,14 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.3554334,
-     "Longitude": -71.060511
+     "Latitude": "42.3554334",
+     "Longitude": "-71.060511"
     },
     {
       "Name": "SOFAR (Supporting Our Families through Addiction and Recovery)",
      "Brief Description": "BMC's SOFAR seeks to create a medical home in the pediatric primary care clinic for parents in recovery and their children with ongoing support for families to enhance child development as well as ongoing support for recovery, with access to specialty care and social services.",
      "Address": "850 Harrison Avenue, Boston, MA 02118 (6th Floor, Yawkey Center)",
-     "Phone Number": "['(617) 414-6640']",
+     "Phone Number": "(617) 414-6640",
      "Website": "https://www.bmc.org/pediatrics-primary-care/sofar",
      "Hours": "Monday - Thursday: 8:00 AM - 8:30PM Friday: 8:00AM - 5:00PM Saturday: 8:00AM - 1:00PM",
      "Gender": "",
@@ -320,8 +320,8 @@
      "Substance allowed?": "",
      "Accessibility?": "",
      "LGBTQ+ support?": "",
-     "Latitude": 42.3554334,
-     "Longitude": -71.060511
+     "Latitude": "42.3554334",
+     "Longitude": "-71.060511"
     }
   ]
 }
