@@ -5,7 +5,7 @@
       "Address": "Basement of the Cambridge Senior Center (Access is solely through the rear parking lot on Green Street), 806 Massachusetts Ave, Cambridge, MA 02139",
       "Brief Description": "Drop-in center on a first come first serve basis until capacity is reached. Provide beverages and a hot meal, access to bathrooms and shower, and the ability to rest on a yoga mat on the floor. Guests may talk with expert staff to get a referral to physical and mental health care, addiction treatment services and housing services. When the Center closes in the morning, all guests are offered a ride to a local daytime shelter.",
       "Phone Number": "['(857) 292-1870']",
-      "Website": "਴tps://www.cambridgema.gov/Services/winterwarmingcenter",
+      "Website": "https://www.cambridgema.gov/Services/winterwarmingcenter",
       "Hours": "2022-2023 season, which runs December 1, 2022 through April 30, 2023, the Warming Center will be available from 7:00 p.m. to 7:00 a.m. seven days a week",
       "Qualifications": "18+, ID not required, damp shelter",
       "Latitude": "42.36662405",
@@ -16,7 +16,7 @@
       "Address": "66 Winthrop St, Cambridge, MA",
       "Brief Description": "Student-run overnight shelter that provides 24 homeless individuals at a time with a safe, clean, and caring place to stay during the winter months. In addition to temporary shelter, HSHS also provides counseling resources and a transitional program for guests who are employed and committed to saving money towards securing housing.",
       "Phone Number": "['(617) 547-2841']",
-      "Website": "਴tps://www.harvardsquare.com/venue/harvard-square-homeless-shelter/",
+      "Website": "https://www.harvardsquare.com/venue/harvard-square-homeless-shelter/",
       "Hours": "Overnight Shelter. Open from November 15th until April 15th; 7:30-8am lottery for 14-day beds; 9-9:30pm for single night beds, 11pm last call lottery for single night beds.",
 
       "Qualifications": "18+, criminal record allowed, no substances allowed - dry shelter, has accessability",
@@ -134,15 +134,59 @@
       "Longitude": "-71.06300696"
     },
     {
-      "Name": "Rosie's Place",
+      "Name": "Rosie\u0027s Place",
       "Address": "889 Harrison Ave, Boston, MA 02118",
-      "Brief Description": "үsie's Place is a multi-service community center that offers women emergency shelter and meals, and so much more: a food pantry, ESOL classes, legal assistance, wellness care, one-on-one support, housing and job search services, and community outreach. Here women will find support, opportunity and the tools they need to make a new start.",
+      "Brief Description": "Rosie's Place is a multi-service community center that offers women emergency shelter and meals, and so much more: a food pantry, ESOL classes, legal assistance, wellness care, one-on-one support, housing and job search services, and community outreach. Here women will find support, opportunity and the tools they need to make a new start.",
       "Phone Number": "['(617) 442-9322']",
       "Website": "https://www.rosiesplace.org/",
       "Hours": "M-F 730AM-7PM; S/Su 9AM-5PM",
       "Qualifications": "womens shelter",
       "Latitude": "42.33398053",
       "Longitude": "-71.07668629"
+    },
+    {
+      "Name": "Heading Home Shelter",
+      "Address": "186 Massachusetts Avenue, Boston, MA 02115",
+      "Brief Description": "Leading provider of shelter in Boston: Heading Home currently owns and operates 10 properties that both house and serve clients. They offer congregate shelters and scattered shelters.",
+      "Phone Number": "['(617) 864-8140']",
+      "Website": "https://www.headinghomeinc.org/",
+      "Hours": "Mon-Fri 9am-5pm",
+      "Qualifications": "",
+      "Latitude": "42.34571458",
+      "Longitude": "-71.086581859"
+    },
+    {
+      "Name": "Woods Mullen Shelter for Women",
+      "Address": "794 Massachusetts Ave, Boston, MA 02118",
+      "Brief Description": "Located at 794 Massachusetts Avenue in Boston's South End. The shelter serves female adults ages 18 years or older. The shelter has 200 beds and is open 365 days a year, 24 hours a day. Beds are given out on a first-come, first-served basis. In the winter months, additional overflow beds are available.",
+      "Phone Number": "['(617) 534-7101']",
+      "Website": "https://www.homelessshelterdirectory.org/shelter/ma_woods-mullen-shelter-and-services",
+      "Hours": "24/7",
+      "Qualifications": "womens shelter",
+      "Latitude": "42.3334796",
+      "Longitude": "-71.07229872"
+    },
+    {
+      "Name": "Saint Patrick Women's Shelter",
+      "Address": "270 Washington St, Somerville, MA 02143",
+      "Brief Description": "St. Patrick’s Shelter is an emergency shelter for homeless women. Guests receive referrals for health care, mental health services, educational services, and housing. Women in need of shelter contact the shelter directly at 617-628-3015 to determine vacancy. Staff will welcome the women and provide an assessment for barriers to housing, creating an individualized treatment plan to self-sufficiency.",
+      "Phone Number": "['(617) 628-3015']",
+      "Website": "https://www.ccab.org/basic-needs/shelters/",
+      "Hours": "24/7",
+      "Qualifications": "womens shelter",
+      "Latitude": "42.3792664",
+      "Longitude": "-71.09798536"
+    },
+    {
+      "Name": "First Church Shelter",
+      "Address": "11 Garden St, Cambridge, MA 02138",
+      "Brief Description": "The First Church Shelter accepts referrals from credible service providers in the greater Boston area, including hospitals, other shelters, and social service agencies. To qualify for the Shelter, you must be a male aged 18 years or older. We are not able to admit guests with active drug or alcohol dependency, or anyone who is experiencing an acute psychiatric emergency.",
+      "Phone Number": "[]",
+      "Website": "https://www.firstchurchcambridge.org/first-church-shelter/",
+      "Hours": "Daily 6pm-7am",
+      "Qualifications": "Sober, 18+, male",
+      "Latitude": "42.37660465",
+      "Longitude": "-71.12306368"
     }
   ]
 }
